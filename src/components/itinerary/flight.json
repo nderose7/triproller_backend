@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_itinerary_flights",
+  "info": {
+    "displayName": "Flight",
+    "icon": "plane"
+  },
+  "options": {},
+  "attributes": {
+    "flightId": {
+      "type": "string"
+    }
+  }
+}

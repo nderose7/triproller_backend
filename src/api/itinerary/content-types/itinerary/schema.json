@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "itineraries",
+  "info": {
+    "singularName": "itinerary",
+    "pluralName": "itineraries",
+    "displayName": "Itinerary",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "flights": {
+      "type": "component",
+      "repeatable": true,
+      "component": "itinerary.flight"
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "itineraries"
+    }
+  }
+}
